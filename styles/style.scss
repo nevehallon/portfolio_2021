@@ -1,0 +1,33 @@
+#gallery-1,
+#gallery-2 {
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 767px) {
+  .section3 {
+    padding: 0;
+  }
+}
+@media (min-width: 767px) {
+  #icon-wrap-1,
+  #icon-wrap-2 {
+    padding: 0;
+    #gallery-1,
+    #gallery-2 {
+      display: flex;
+      place-items: center;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  #icon-wrap-1,
+  #icon-wrap-2 {
+    padding: 0;
+
+    #gallery-1,
+    #gallery-2 {
+      display: flex;
+    }
+  }
+}
