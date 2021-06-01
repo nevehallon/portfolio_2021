@@ -3,3 +3,4 @@
 *.scss linguist-detectable
 
 **/* -linguist-vendored
+*.html linguist-vendored
