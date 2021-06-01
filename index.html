@@ -2256,6 +2256,7 @@
                                         data-element_type="column"
                                     >
                                         <div class="elementor-widget-wrap">
+
                                             <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
                                             <script
                                                 src="https://cdn.jotfor.ms/static/prototype.forms.js"
@@ -2840,7 +2841,9 @@
     <script
         type='text/javascript'
         id='elementskit-framework-js-frontend-js-after'
-    >var elementskit = { resturl: './wp-json/elementskit/v1/', }</script>
+    >var elementskit = {
+            resturl: './wp-json/elementskit/v1/',
+        }</script>
     <script
         type='text/javascript'
         id='elementor-frontend-js-extra'
@@ -2852,7 +2855,54 @@
     <script
         type='text/javascript'
         id='elementor-frontend-js-after'
-    >window.scopes_array = {}; window.backend = 0; jQuery(window).on("elementor/frontend/init", function () { elementorFrontend.hooks.addAction("frontend/element_ready/section", function ($scope, $) { if ("undefined" == typeof $scope) { return; } if ($scope.hasClass("premium-equal-height-yes")) { var id = $scope.data("id"); window.scopes_array[id] = $scope; } if (elementorFrontend.isEditMode()) { var url = PaModulesSettings.equalHeight_url; jQuery.cachedAssets = function (url, options) {                        // Allow user to set any option except for dataType, cache, and url.                        options = jQuery.extend(options || {}, {                            dataType: "script",                            cache: true,                            url: url                        });                        // Return the jqXHR object so we can chain callbacks.                        return jQuery.ajax(options);                    };                    jQuery.cachedAssets(url);                    window.backend = 1;                }            });        });        jQuery(document).ready(function () {            if (jQuery.find(".premium-equal-height-yes").length < 1) {                return;            }            var url = PaModulesSettings.equalHeight_url;            jQuery.cachedAssets = function (url, options) {                // Allow user to set any option except for dataType, cache, and url.                options = jQuery.extend(options || {}, {                    dataType: "script",                    cache: true,                    url: url                });                // Return the jqXHR object so we can chain callbacks.                return jQuery.ajax(options);            };            jQuery.cachedAssets(url);        });</script>
+    >window.scopes_array = {};
+        window.backend = 0;
+        jQuery(window).on("elementor/frontend/init", function () {
+            elementorFrontend.hooks.addAction("frontend/element_ready/section", function ($scope, $) {
+                if ("undefined" == typeof $scope) {
+                    return;
+                }
+                if ($scope.hasClass("premium-equal-height-yes")) {
+                    var id = $scope.data("id");
+                    window.scopes_array[id] = $scope;
+                }
+                if (elementorFrontend.isEditMode()) {
+                    var url = PaModulesSettings.equalHeight_url;
+                    jQuery.cachedAssets = function (url, options) {
+                        // Allow user to set any option except for dataType, cache, and url.
+                        options = jQuery.extend(options || {}, {
+                            dataType: "script",
+                            cache: true,
+                            url: url
+                        });
+                        // Return the jqXHR object so we can chain callbacks.
+                        return jQuery.ajax(options);
+                    };
+                    jQuery.cachedAssets(url);
+                    window.backend = 1;
+                }
+            });
+        });
+        jQuery(document).ready(function () {
+            if (jQuery.find(".premium-equal-height-yes").length < 1) {
+                return;
+            }
+
+            var url = PaModulesSettings.equalHeight_url;
+
+            jQuery.cachedAssets = function (url, options) {
+                // Allow user to set any option except for dataType, cache, and url.
+                options = jQuery.extend(options || {}, {
+                    dataType: "script",
+                    cache: true,
+                    url: url
+                });
+
+                // Return the jqXHR object so we can chain callbacks.
+                return jQuery.ajax(options);
+            };
+            jQuery.cachedAssets(url);
+        });</script>
     <script
         defer
         src="./content/cache/autoptimize/js/autoptimize_02ce510b4a8aa3c7af39ff17645a3df4.js"
