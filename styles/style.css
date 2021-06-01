@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+#ekit_lottie_dcc85b0 {
+  background: radial-gradient(circle, white 0%, rgba(0, 0, 0, 0) 35%);
+}
+
+#ekit_lottie_dcc85b0 svg {
+  max-height: 500px;
+}
+
 #gallery-1,
 #gallery-2 {
   display: -ms-grid;
