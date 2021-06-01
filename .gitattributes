@@ -1,3 +1,2 @@
 *.html linguist-vendored
-content/cache/autoptimize/* linguist-detectable
-content/cache/autoptimize/* linguist-detectable
+content/**/** linguist-detectable
