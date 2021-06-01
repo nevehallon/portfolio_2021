@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 #gallery-1,
 #gallery-2 {
   display: -ms-grid;
@@ -120,6 +121,9 @@
     -webkit-transform: scale(1.6);
             transform: scale(1.6);
   }
+  .elementor-159 .elementor-element.elementor-element-564b576 {
+    padding-bottom: 1rem;
+  }
 }
 
 .contact-form label {
@@ -134,5 +138,19 @@
 .mailSent svg {
   -webkit-mask-image: radial-gradient(circle, black 0, rgba(0, 0, 0, 0) 75%);
   mask-image: radial-gradient(circle, black 0, rgba(0, 0, 0, 0) 75%);
+}
+
+.form-all *,
+.form-all textarea,
+.form-all label {
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+@media (max-width: 1023px) {
+  .elementor-159 .elementor-element.elementor-element-564b576 {
+    padding: 3rem 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
