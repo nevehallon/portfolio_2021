@@ -1,9 +1,9 @@
+*.js linguist-detectable
+*.css linguist-detectable
+*.scss linguist-detectable
+
 *.html linguist-vendored
 *.svg linguist-vendored
 *.json linguist-vendored
 *.txt linguist-vendored
 *.htaccess linguist-vendored
-
-**/*.js linguist-detectable
-**/*.css linguist-detectable
-**/*.scss linguist-detectable
