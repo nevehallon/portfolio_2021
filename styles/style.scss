@@ -31,3 +31,67 @@
     }
   }
 }
+
+.skills {
+  direction: rtl;
+}
+.gitCard,
+.gitCard2 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+
+    svg {
+      transform: scale(1);
+    }
+  }
+}
+.gitCard svg {
+  transform: scale(1.5);
+  flex: 0 0 100%;
+  padding: none;
+  margin: 10px 0;
+}
+.gitCard2 svg {
+  transform: scale(1.5);
+  flex: 0 0 100%;
+  padding: none;
+  margin: 10px 0;
+  padding: 4vw 0;
+}
+@media (min-width: 340px) {
+  .gitCard2 svg {
+    padding: 3.2vw 5vw;
+    transform: scale(1.3);
+  }
+}
+@media (min-width: 768px) {
+  .gitCard2 svg {
+    flex: 1;
+    padding: 1em 5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .gitCard2 svg {
+    padding: 2em 6em;
+    transform: scale(1.6);
+  }
+}
+.contact-form label {
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-form form > p:nth-last-of-type(1) {
+  display: inherit !important;
+}
+.mailSent svg {
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) 75%);
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) 75%);
+}
