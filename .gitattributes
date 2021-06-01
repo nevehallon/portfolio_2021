@@ -1,2 +1,5 @@
 *.html linguist-vendored
+*.svg linguist-vendored
+*.json linguist-vendored
+*.text linguist-vendored
 content/**/** linguist-detectable
