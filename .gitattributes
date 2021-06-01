@@ -2,4 +2,4 @@
 *.svg linguist-vendored
 *.json linguist-vendored
 *.text linguist-vendored
-content/**/** linguist-detectable
+content/**/**/* linguist-detectable
