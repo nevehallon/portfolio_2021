@@ -3,8 +3,3 @@
 *.scss linguist-detectable
 
 **/* -linguist-vendored
-*.html linguist-vendored
-*.svg linguist-vendored
-*.json linguist-vendored
-*.txt linguist-vendored
-*.htaccess linguist-vendored
