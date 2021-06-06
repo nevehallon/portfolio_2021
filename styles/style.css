@@ -14,10 +14,6 @@
   place-items: center;
 }
 
-.gitCard {
-  margin-bottom: 15px;
-}
-
 @media (max-width: 767px) {
   .section3 {
     padding: 0;
@@ -164,5 +160,9 @@
   .elementor-159 .elementor-element.elementor-element-564b576 {
     padding: 3rem 1rem;
   }
+}
+
+.gitCard {
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
