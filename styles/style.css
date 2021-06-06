@@ -14,6 +14,10 @@
   place-items: center;
 }
 
+.gitCard {
+  margin-bottom: 15px;
+}
+
 @media (max-width: 767px) {
   .section3 {
     padding: 0;
